@@ -5,11 +5,11 @@ const ms = require("ms");
 
 exports.run = async(client, message, args) => {
               const ayarlar = require('../ayarlar.json')
-				    let prefix = await require('quick.db').fetch(`prefix.${message.guild.id}`) || ayarlar.prefix
+				    let prefix = await require('quick.db').fetch(`prefix.${message.guild.id}`.) || ayarlar.prefix
 
-  let mutel = await db.fetch(`isimerkekRol.${message.guild.id}`);
-  let yetkili = await db.fetch(`isimyetkiliRol.${message.guild.id}`);
-  let kayitsiz = await db.fetch(`isimkayıtsızRol.${message.guild.id}`);
+  let mutel = await db.fetch(`isimerkekRol.${message.guild.id}`814088878000570398);
+  let yetkili = await db.fetch(`isimyetkiliRol.${message.guild.id}`814088877165248533);
+  let kayitsiz = await db.fetch(`isimkayıtsızRol.${message.guild.id}`814088881468342302);
 
   if (!mutel) return
   if(!message.member.roles.cache.has(yetkili)) {
